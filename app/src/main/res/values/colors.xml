@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="statusBarColor">#000000</color><!-- Warna hitam -->
+    <color name="colorPrimary">#156119</color><!-- Warna hijau -->
+    <color name="colorPrimaryDark">#388E3C</color><!-- Warna hijau gelap untuk status bar -->
+    <color name="colorAccent">#8BC34A</color><!-- Warna aksen hijau terang -->
+    <color name="selected_role">#4CAF50</color><!-- Warna untuk role yang terpilih -->
+    <color name="colorBottomNavBackground">#90AA8D</color><!-- Warna latar belakang Bottom Navigation -->
+    <color name="selected_item_color">#156119FF</color><!-- Warna yang lebih gelap untuk item yang dipilih -->
+    <color name="default_item_color">#8BC34A</color><!-- Warna default untuk item -->
+    <color name="unselected_role">#CACBCA</color>
+</resources>

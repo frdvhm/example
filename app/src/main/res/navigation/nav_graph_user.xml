@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:defaultNavHost="true"
+    app:startDestination="@id/userHomeFragment">
+
+    <!-- Fragment untuk User Home -->
+    <fragment
+        android:id="@+id/userHomeFragment"
+        android:name="com.example.app.ui.user.UserHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_user_home">
+        <!-- Aksi navigasi ke User Report -->
+        <action
+            android:id="@+id/action_userHomeFragment_to_userReportFragment"
+            app:destination="@id/userReportFragment" />
+            <argument
+                android:name="reportId"
+                app:argType="integer" />
+    </fragment>
+
+    <!-- Fragment untuk User Report -->
+    <fragment
+        android:id="@+id/userReportFragment"
+        android:name="com.example.app.ui.user.UserReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_user_report">
+        <!-- Aksi navigasi ke User Edit Report -->
+        <action
+            android:id="@+id/action_userReportFragment_to_userEditReportFragment"
+            app:destination="@id/userEditReportFragment">
+            <!-- Argument reportId untuk dipassing ke UserEditReportFragment -->
+            <argument
+                android:name="reportId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <!-- Fragment untuk User Edit Report -->
+    <fragment
+        android:id="@+id/userEditReportFragment"
+        android:name="com.example.app.ui.report.UserEditReportFragment"
+        android:label="Edit Report"
+        tools:layout="@layout/fragment_user_edit_report" />
+
+    <!-- Fragment untuk User Profile -->
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.app.ui.user.UserProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_user_profile">
+        <!-- Aksi navigasi ke Edit Profile -->
+        <action
+            android:id="@+id/action_userProfileFragment_to_editProfileUserFragment"
+            app:destination="@id/editProfileUserFragment" />
+    </fragment>
+
+    <!-- Fragment untuk Edit Profile -->
+    <fragment
+        android:id="@+id/editProfileUserFragment"
+        android:name="com.example.app.ui.profile.EditProfileUserFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_user_edit_profile" />
+</navigation>

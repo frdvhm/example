@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title Settings -->
+    <TextView
+        android:id="@+id/title_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Settings"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Account Section Title -->
+    <TextView
+        android:id="@+id/account_title"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Account"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Account Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_box"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- Edit Profile -->
+        <TextView
+            android:id="@+id/btnEditProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="10dp"
+            android:text="Edit Profile"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Security -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_security"
+            android:drawablePadding="10dp"
+            android:text="Security"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Notifications -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:drawablePadding="10dp"
+            android:text="Notifications"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Privacy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_privacy"
+            android:drawablePadding="10dp"
+            android:text="Privacy"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Actions Section Title -->
+    <TextView
+        android:id="@+id/actions_title"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Actions"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Actions Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_box"
+        android:padding="10dp">
+
+        <!-- ReportAdapter Problem -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_report"
+            android:drawablePadding="10dp"
+            android:text="Report Problem"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Add Account -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="10dp"
+            android:text="Add Account"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Log Out -->
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawablePadding="10dp"
+            android:text="Log Out"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

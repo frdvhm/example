@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App</string>
+    <string-array name="report_status">
+        <item>Pending</item>
+        <item>On Progress</item>
+        <item>Complete</item>
+    </string-array>
+</resources>

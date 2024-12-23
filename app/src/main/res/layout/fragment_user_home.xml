@@ -1,0 +1,33 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mapbox MapView -->
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mapbox_styleUri="mapbox://styles/mapbox/streets-v11" />
+
+    <!-- Tombol untuk navigasi ke ReportAdapter -->
+    <Button
+        android:id="@+id/btnAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="Go to Report"
+        android:backgroundTint="#90AA8D"
+        android:layout_marginBottom="100dp" />
+    <!-- Jarak agar tidak tertutup oleh BottomNavigationView -->
+
+    <!-- BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_user" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

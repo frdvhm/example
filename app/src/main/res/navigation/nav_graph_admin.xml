@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:defaultNavHost="true"
+    app:startDestination="@id/adminHomeFragment">
+
+    <!-- Fragment untuk Admin Home -->
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.example.app.ui.admin.AdminHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_admin_home">
+        <!-- Aksi navigasi ke Admin Report -->
+        <action
+            android:id="@+id/action_adminHomeFragment_to_adminReportFragment"
+            app:destination="@id/adminReportFragment" />
+            <argument
+                android:name="reportId"
+                app:argType="integer" />
+    </fragment>
+
+    <!-- Fragment untuk Admin Report -->
+    <fragment
+        android:id="@+id/adminReportFragment"
+        android:name="com.example.app.ui.admin.AdminReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_admin_report">
+        <!-- Aksi navigasi ke Admin Edit Report -->
+        <action
+            android:id="@+id/action_adminReportFragment_to_adminEditReportFragment"
+            app:destination="@id/adminEditReportFragment">
+            <!-- Argument reportId untuk dipassing ke AdminEditReportFragment -->
+            <argument
+                android:name="reportId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <!-- Fragment untuk Admin Edit Report -->
+    <fragment
+        android:id="@+id/adminEditReportFragment"
+        android:name="com.example.app.ui.report.AdminEditReportFragment"
+        android:label="Edit Report"
+        tools:layout="@layout/fragment_admin_edit_report" />
+
+    <fragment
+        android:id="@+id/adminProfileFragment"
+        android:name="com.example.app.ui.admin.AdminProfileFragment"
+        android:label="Admin Profile"
+        tools:layout="@layout/fragment_admin_profile">
+        <action
+            android:id="@+id/action_adminReportFragment_to_adminEditReportFragment"
+            app:destination="@id/adminEditReportFragment">
+            <!-- Argument reportId untuk dipassing ke UserEditReportFragment -->
+            <argument
+                android:name="reportId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileAdminFragment"
+        android:name="com.example.app.ui.profile.EditProfileAdminFragment"
+        android:label="Edit Profile Admin"
+        tools:layout="@layout/fragment_admin_edit_profile" />
+</navigation>
